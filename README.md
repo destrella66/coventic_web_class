@@ -1,5 +1,5 @@
 # Coventic Website [ Challenge ]
-
+![alt text](https://github.com/destrella66/coventic_web_class/blob/main/img/final_result.png)
 ## Recomendations
 
 -- Your final result can be found inside of the 'img' folder, it's a .png file named 'final_result.png'
