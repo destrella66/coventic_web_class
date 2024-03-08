@@ -1,0 +1,302 @@
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url(../img/background.png) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 25px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100vh;
+    align-items: center;
+    background-color: #0a1126;
+}
+
+.navcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 92vh;
+    margin: 0 auto;
+}
+
+.navcon span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 10px 2px;
+}
+
+.navcon .menu {
+    margin: 0 5px;
+}
+
+.menu .div1 {
+    width: 23px;
+    border: 1.5px solid #fff;
+    border-radius: 0.75px;
+}
+
+.navcon .menu:hover .div1 {
+    animation: div1 0.2s linear forwards;
+}
+
+@keyframes div1 {
+    from {}
+
+    to {
+        width: 12px;
+    }
+}
+
+.menu .div2 {
+    width: 19px;
+    border: 1.5px solid #fff;
+    border-radius: 0.75px;
+    margin: 5px 0px;
+}
+
+.navcon .menu:hover .div2 {
+    animation: div2 0.2s linear forwards;
+}
+
+@keyframes div2 {
+    from {}
+
+    to {
+        width: 17px;
+    }
+}
+
+.menu .div3 {
+    width: 12px;
+    border: 1.5px solid #fff;
+    border-radius: 0.75px;
+}
+
+.navcon .menu:hover .div3 {
+    animation: div3 0.2s linear forwards;
+}
+
+@keyframes div3 {
+    from {}
+
+    to {
+        width: 23px;
+    }
+}
+
+.navcon span:not(.menu):hover {
+    animation: bigger 0.3s linear forwards;
+}
+
+@keyframes bigger {
+    0% {}
+
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.navcon .fb {
+    background: url(../img/fb.png) no-repeat;
+    background-size: 28px 28px;
+    /* margin-top: 200px; */
+}
+
+.navcon .ig {
+    background: url(../img/ig.png) no-repeat;
+    background-size: 28px 28px;
+}
+
+.navcon .tw {
+    background: url(../img/tw.png) no-repeat;
+    background-size: 28px 28px;
+    /* margin-bottom: 200px; */
+}
+
+.navcon .share {
+    background: url(../img/share.png) no-repeat;
+    background-size: 28px 28px;
+}
+
+.navcon .info {
+    background: url(../img/info.png) no-repeat;
+    background-size: 28px 28px;
+}
+
+header {
+    flex: 3;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    background: url(../img/logo.png) no-repeat;
+    background-size: 127px 52px;
+    height: 52px;
+    width: 127px;
+}
+
+.btn {
+    position: relative;
+    height: 42px;
+    width: 110px;
+}
+
+.btn button {
+    position: absolute;
+    height: 42px;
+    background-color: transparent;
+    border-radius: 21px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 2;
+}
+
+.btn1 {
+    width: 110px;
+}
+
+.mod {
+    color: #fff;
+    line-height: 1.3;
+    flex: 5;
+}
+
+.mod h1 {
+    font-size: 70px;
+}
+
+.mod h1:nth-of-type(2) {
+    margin-bottom: 40px;
+}
+
+.mod h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn2 {
+    width: 160px;
+}
+
+.btn .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: #2dd2ca;
+    transition: width 0.3s;
+    border-radius: 21px;
+}
+
+.mod .btn {
+    width: 160px;
+}
+
+.btn button:hover {
+    border: none;
+}
+
+.btn:hover .bar {
+    height: 42px;
+    width: 110px;
+    background-color: #2dd2ca;
+}
+
+.mod .btn:hover .bar {
+    width: 160px;
+}
+
+footer .bubble {
+    position: absolute;
+    bottom: -100px;
+    height: 70px;
+    width: 70px;
+    background: url(../img/bubble.png) no-repeat;
+    opacity: 0.8;
+}
+
+footer .bubble1 {
+    left: 100px;
+    animation: bubble2 2s ease-out infinite;
+    background-size: 40px 40px;
+}
+
+/* footer .bubble2 {
+    left: 300px;
+    animation: bubble2 6s ease-out infinite;
+    background-size: 50px 50px;
+} */
+
+footer .bubble3 {
+    left: 350px;
+    animation: bubble 6s ease-out 3s infinite;
+    background-size: 33px 33px;
+    opacity: 0.6;
+}
+
+footer .bubble4 {
+    left: 600px;
+    animation: bubble2 3s ease-out 10s infinite;
+    background-size: 55px 55px;
+    opacity: 0.8;
+}
+
+footer .bubble5 {
+    left: 1200px;
+    animation: bubble 6s ease-out 8s infinite;
+    background-size: 70px 70px;
+    opacity: 0.9;
+}
+
+footer .bubble6 {
+    left: 1300px;
+    animation: bubble2 5s ease-out infinite;
+    background-size: 40px 40px;
+}
+
+footer .bubble7 {
+    left: 800px;
+    animation: bubble 4s ease-out infinite;
+    background-size: 37px 37px;
+}
+
+@keyframes bubble {
+    0% {}
+
+    100% {
+        opacity: calc(0);
+        transform: translateY(-700px) scale(0.8);
+
+    }
+}
+
+@keyframes bubble2 {
+    0% {}
+
+    100% {
+        opacity: calc(0);
+        transform: translateY(-300px) scale(0.4);
+
+    }
+}
